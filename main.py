@@ -51,8 +51,8 @@ except ValueError:
     logger.error("OWNER_ID or ADMIN_ID must be valid integers!")
     raise
 
-YOUR_USERNAME = YOUR_USERNAME or '@GOAT_NG'
-UPDATE_CHANNEL = UPDATE_CHANNEL or 'https://t.me/YourChannel'
+YOUR_USERNAME = YOUR_USERNAME or '@Ya7ia_42'
+UPDATE_CHANNEL = UPDATE_CHANNEL or 'https://t.me/TheBest404_e'
 
 BASE_DIR = Path(__file__).parent.absolute()
 UPLOAD_BOTS_DIR = BASE_DIR / 'upload_bots'
