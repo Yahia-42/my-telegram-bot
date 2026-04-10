@@ -19,7 +19,14 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 load_dotenv()
-
+async def main():
+    logger.info("🚀 Starting Advanced File Host Bot...")
+    
+    asyncio.create_task(web_server())
+    
+    await bot.delete_webhook(drop_pending_updates=True)  # ← ضيف السطر هنا
+    
+    await dp.start_polling(bot)
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
